@@ -1,0 +1,12 @@
+public class Exemplo3 {
+
+	public static void main(String[] args) {
+		String nome = "Beatriz";
+		String sobrenome= "Ferreira";
+		int anoNascimento = 2004;
+		int anoAtual= 2024;
+		int idade= anoAtual- anoNascimento;
+		
+		/* A aluna XXX XXX nasceu em XXX*/
+		System.out.println(" A aluna " + nome + " " + sobrenome + " nasceu em "  + anoNascimento + " e tem " + idade + " anos.");}
+}

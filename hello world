@@ -1,0 +1,12 @@
+//Classe Exemplo 1  
+//A classe é a representação do objeto
+public class Exemplo1{
+	//Metodo Principal
+
+	// Metodo Principal
+	public static void main (String[] args) {
+		//Exibição de dados no console 
+		//Exibição com quebra de linha
+		System.out.println("Olá mundo!");
+	}
+}

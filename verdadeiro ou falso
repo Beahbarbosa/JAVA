@@ -1,0 +1,16 @@
+public class Aula03ex5 {
+
+	public static void main(String[] args) {
+		// Operadores Logico
+		int a=5;
+		int b=9;
+		//&& (e)
+		//Retorna verdadeiro se duas premissas forem verdadeiras
+		System.out.println(a < 5 && a < b);
+		// || (ou) retorna verdadeiro de uma das operações for verdadeira
+		System.out.println(a <5 || a < b);
+		//!(negação) inverte o resultado
+		System.out.println(!(a <5 || a < b));
+	}
+
+}

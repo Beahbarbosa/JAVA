@@ -1,0 +1,24 @@
+
+public class Aula03ex2 {
+
+	public static void main(String[] args) {
+		int a = 50; //Numero Inteiro
+		int b = 60; //Numero Inteiro
+		System.out.println("Operadores Aritmeticos");
+		System.out.println(a + b); //Soma
+		System.out.println(a - b); //Subtração
+		System.out.println(a * b); //Multiplicação
+		System.out.println(a / b); //Divisão
+		System.out.println(a % b); //Resto da divisão
+		System.out.println(++a); // Incremental (a = a+1)
+		System.out.println(--b); //Decremento (b=b-1)
+		
+		System.out.println("A: "+a); 
+		System.out.println("B: "+b); 
+		
+		//Casting
+		//a*b
+		double resultado = a*b; // A e B são inteiros
+		System.out.println("Resultado: " + resultado);
+	}
+}

@@ -1,0 +1,22 @@
+
+public class Aula03 {
+
+	public static void main(String[] args) {
+		// Automatico
+		//byte ->shot -> char -> int -> long -> float -> double
+		int numeroInteiro=10;
+		double numeroDecimal= numeroInteiro;
+		System.out.println("Casting Automatico");
+		System.out.println("int: " + numeroInteiro);
+		System.out.println("double: " + numeroDecimal);
+		
+		//Casting Manual
+		double meuDouble =9.78d;
+		int meuInt= (int) meuDouble; // Converter para int
+		System.out.println("Casting Manual");
+		System.out.println("double: " + meuDouble);
+		System.out.println("int: " + meuInt);
+		
+	}
+
+}

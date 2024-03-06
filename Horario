@@ -1,0 +1,16 @@
+package Default;
+
+public class Exemplo2 {
+
+	public static void main(String[] args) {
+	 int horario=20;
+	 
+	 if(horario >18) {
+		 System.out.println("Boa Noite!");
+	 }else {
+		 System.out.println("Olá, tudo bem?");
+	 }
+
+	}
+
+}

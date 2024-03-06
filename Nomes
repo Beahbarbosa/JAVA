@@ -1,0 +1,11 @@
+public static void main(String[] args) {
+		
+		String[] nomes = {"Diego","Arthur","Ana","Maria","José"};
+				for (String i : nomes) {
+					System.out.println("Cliente: "+i);
+
+				
+				}
+	}
+
+}

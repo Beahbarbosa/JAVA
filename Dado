@@ -1,0 +1,33 @@
+package Default;
+
+public class Exemplo11 {
+
+	public static void main(String[] args) {
+		int a=55;
+		int b=77;
+		double c=-45.66d;
+		
+		//Encontrar o maior valor entre A e B
+		System.out.println(Math.max(a, b));
+		
+		//Encontrar o menor valor entre A e B
+		System.out.println(Math.min(a, b));
+		
+		//Raiz quadrada
+		System.out.println(Math.sqrt(a));
+		
+		
+		//Gerar um numnero aleatorio
+		System.out.println(Math.random());
+		System.out.println("Decimal: " + (Math.random()*10)+1);
+		
+		int inteiro= (int) (Math.random()*10+1);
+		System.out.println("Inteiro" + inteiro);
+		
+		int dado= (int)(Math.random()*6)+1;
+		System.out.println("Resultado da Dado: " + dado);
+			
+
+	}
+
+}

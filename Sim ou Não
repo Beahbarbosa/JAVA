@@ -1,0 +1,21 @@
+public class exemplo6 {
+
+	public static void main(String[] args) {
+		String resposta = "Não";
+		switch(resposta) {
+		case "SIM":
+			System.out.println("A resposta foi SIM");
+		break;
+		case "NÃO":
+			System.out.println("A resposta foi NÃO");
+			break;
+		default:
+			System.out.println("Resposta não identificada");
+
+			
+		
+		}
+
+	}
+
+}

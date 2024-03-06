@@ -1,0 +1,21 @@
+package Default;
+
+public class Exemplo3 {
+	public static void main(String[] args) {
+	  int idade = 17; // Criando variavel e inicializando 
+	  String resultado; //Apenas criando sem inicializar
+	  
+	  //Usar a variavel 
+	  resultado=(idade > 18)? "Pode Entrar!" :"Bloqueado!";
+	  System.out.println(resultado);
+	  
+	  
+	  //É o mesmo de 
+	  if(idade > 18){
+	   System.out.println ("Pode Entrar");
+	  }else{
+	   System.out.println ("Bloqueado!");
+	  }
+	}
+}
+

@@ -36,5 +36,22 @@ public class atleta {
 		this.esporte=JOptionPane.showInputDialog("Esporte");
 		this.valorPatrocinio=Double.parseDouble(JOptionPane.showInputDialog("Valor patrocínio:"));			
 	}
+//Atualizar Valor
+	public double atualizarValor(double taxa) {
+		this.valorPatrocinio +=this.valorPatrocinio *taxa /100;
+		return this.valorPatrocinio;	
+	}
+	//Mostrar os Dados
+	public void mostrar () {
+		String mensagem=">>>Objeto da classe Atleta<<<";
+		mensagem +="\nCodigo: " + this.codigo;
+		mensagem +="\nNome: " + this.nome;
+		mensagem +="\nEsporte: " + this.esporte;
+		NumberFormat formatar= DecimalFormat.getCurrencyInstance();
+		mensagem +="\nValor: " + formatar.format(this.valorPatrocinio);
+		JOptionPane.showMessageDialog(null,mensagem);
+	}
+}
+	
 }
 	

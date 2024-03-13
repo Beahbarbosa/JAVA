@@ -1,0 +1,40 @@
+import javax.swing.JOptionPane;
+
+public class atleta {
+
+	// Atributos
+	private int codigo;
+	private String nome;
+	private String esporte;
+	private double valorPatrocinio;
+	
+	//Métodos Acessores -Get e Set
+	//Get
+	public int getCodigo() {
+		return this.codigo;
+	}
+	//Set
+	public void setCodigo(int codigo) {
+		this.codigo= codigo;
+	}
+	
+	public String getEsporte() {
+		return esporte;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public double getValorPatrocinio() {
+		return valorPatrocinio;
+	}
+	
+//Metodos
+	public void inserirDados () {
+		this.codigo = 
+				Integer.parseInt(JOptionPane.showInputDialog("Codigo"));
+		this.nome=JOptionPane.showInputDialog("Nome");
+		this.esporte=JOptionPane.showInputDialog("Esporte");
+		this.valorPatrocinio=Double.parseDouble(JOptionPane.showInputDialog("Valor patrocínio:"));			
+	}
+}
+	

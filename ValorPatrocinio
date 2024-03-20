@@ -1,0 +1,64 @@
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import javax.swing.JOptionPane;
+
+public class Atleta {
+// Atributos:
+	private int codigo;
+	private String nome;
+	private String esporte;
+	private double valorPatrocinio;
+	
+	// Metodos acessores - Get e Set
+	// Get: consultar uma informação, "pegar" uma informação
+	public int getCodigo() {
+		return this.codigo;
+}
+	// Set: Inserir uma informação.
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+}
+	public String getEsporte() {
+		return esporte;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public double getValorPatrocinio() {
+	return valorPatrocinio;
+}	
+	public void setEsporte(String esporte) {
+	this.esporte = esporte;
+}
+	public void setNome(String nome) {
+	this.nome = nome;
+}
+	public void setValorPatrocinio(double valorPatrocinio) {
+	this.valorPatrocinio = valorPatrocinio;
+}
+	// Métodos
+	public void inserirDados() {
+		this.codigo = Integer.parseInt(JOptionPane.showInputDialog("Codigo"));
+		this.nome = JOptionPane.showInputDialog("Nome");
+		this.esporte = JOptionPane.showInputDialog("esporte");
+		this.valorPatrocinio = Double.parseDouble(JOptionPane.showInputDialog("valorPatrocinio"));
+		
+	}
+	// Atualizar Valor
+	public double atualizarValor(double taxa) {
+		this.valorPatrocinio += this.valorPatrocinio*taxa / 100;
+		return this.valorPatrocinio;
+}
+	// Mostrar os dados
+	public void mostrar() {
+		String mensagem = "Objeto da classe Atleta";
+		mensagem += "\nCodigo: " + this.codigo;
+		mensagem += "\nNome: " + this.nome;
+		mensagem += "\nEsporte: " + this.esporte;
+		NumberFormat formatar = DecimalFormat.getCurrencyInstance();
+		mensagem += "\nValor: " + formatar.format (this.valorPatrocinio);
+		JOptionPane.showMessageDialog(null,mensagem);
+		
+	}
+	
+}

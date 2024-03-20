@@ -1,0 +1,18 @@
+public class JogadorDeBasquete extends Atleta{
+	private double altura;
+	private String posicao;
+	public double getAltura() {
+		return altura;
+	}
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
+	public String getPosicao() {
+		return posicao;
+	}
+	public void setPosicao(String posicao) {
+		this.posicao = posicao;
+	}
+	
+
+}

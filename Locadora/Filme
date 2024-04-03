@@ -1,0 +1,53 @@
+import javax.swing.JOptionPane;
+
+public class Filme {
+	//Atributos
+	
+ private String tipoMidia; //CD,DVD,BLU-RAY
+ private String duracao;
+ private String genero;
+ private int faixaEtaria;
+private int codigoCliente;
+ 
+  //Get e Set 
+ public String getTipoMidia() {
+	return tipoMidia;
+}
+public void setTipoMidia(String tipoMidia) {
+	this.tipoMidia = tipoMidia;
+}
+public String getDuracao() {
+	return duracao;
+}
+public void setDuracao(String duracao) {
+	this.duracao = duracao;
+}
+public String getGenero() {
+	return genero;
+}
+public void setGenero(String genero) {
+	this.genero = genero;
+}
+public int getFaixaEtaria() {
+	return faixaEtaria;
+}
+public void setFaixaEtaria(int faixaEtaria) {
+	this.faixaEtaria = faixaEtaria;
+}
+ 
+ //Método
+public void inserirDados() {
+  this.tipoMidia = JOptionPane.showInputDialog("Tipo de Midia");
+  this.genero=JOptionPane.showInputDialog("Genero de Filme");
+  this.faixaEtaria=Integer.parseInt(JOptionPane.showInputDialog("Faixa Etaria"));
+  this.duracao=JOptionPane.showInputDialog("Duração");
+}
+public int getCodigoCliente() {
+	return codigoCliente;
+}
+public void setCodigoCliente(int codigoCliente) {
+	this.codigoCliente = codigoCliente;
+}
+
+}                           
+              

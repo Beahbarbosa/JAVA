@@ -1,0 +1,46 @@
+import javax.swing.JOptionPane;
+
+public class Emprestimo  extends Filme{
+private int codigoCliente;
+private String dataEmprestimo;
+private String dataDevolucao;
+public int getCodigoCliente() {
+	return codigoCliente;
+}
+public void setCodigoCliente(int codigoCliente) {
+	this.codigoCliente = codigoCliente;
+}
+public String getDataEmprestimo() {
+	return dataEmprestimo;
+}
+public void setDataEmprestimo(String dataEmprestimo) {
+	this.dataEmprestimo = dataEmprestimo;
+}
+public String getDataDevolucao() {
+	return dataDevolucao;
+}
+public void setDataDevolucao(String dataDevolucao) {
+	this.dataDevolucao = dataDevolucao;
+}
+@Override
+public void inserirDados() {
+	 //TODO Auto-generated method stub
+	 this.codigoCliente= Integer.parseInt(JOptionPane.showInputDialog("Codigo Cliente"));
+	 this.dataEmprestimo= JOptionPane.showInputDialog("Data Emprestimo");
+	 super.inserirDados();
+	 this.dataDevolucao=JOptionPane.showInputDialog("Data Emprestimo");
+}
+
+@Override
+public String toString() {
+	 String texto="\nLOCAÇÃO"
+			 +"\n Codigo: "+ this.codigoCliente
+			 +"\n Data Emprestimo: "+ this.dataEmprestimo
+			 +"\n Tipo Midia: "+ this.getTipoMidia()
+			 +"\n Genero: "+ this.getGenero()
+			 +"\n Faixa Etaria: "+ this.getFaixaEtaria()
+			 +"\n Duração: "+ this.getDuracao()
+			 +"\n Data Devolucao: "+ this.dataDevolucao;
+	 return texto;
+}
+}

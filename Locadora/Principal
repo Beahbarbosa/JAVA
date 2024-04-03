@@ -1,0 +1,12 @@
+import javax.swing.JOptionPane;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Emprestimo cliente1= new Emprestimo();
+		cliente1.inserirDados();
+		JOptionPane.showMessageDialog(null, cliente1.toString());
+
+	}
+
+}

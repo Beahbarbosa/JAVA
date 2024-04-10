@@ -1,0 +1,24 @@
+
+public class Principal3 {
+
+	public static void main(String[] args) {
+		Atleta atleta1=new Atleta ();
+		atleta1.inserirDados();
+		
+		Time time1=new Time();
+		time1.setCodigoTime(666);
+		time1.setNomeTime("Palmeiras");
+		//Vinculando atleta ao time
+		time1.setAtleta(atleta1);
+		
+		Treinador treinador1=new Treinador();
+		treinador1.setNomeTreinador("Abel Ferreira");
+		time1.setTreinador(treinador1);
+	
+		System.out.println("O time é "+ time1.getNomeTime());
+		System.out.println("O nome do atleta: "+time1.getAtleta().getNome());
+		System.out.println("Novamente o nome: " + atleta1.getNome());
+		System.out.println("Treinador: " + time1.getTreinador().getNomeTreinador());
+	}
+
+}

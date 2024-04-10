@@ -1,0 +1,19 @@
+public class Principal2 {
+
+	public static void main(String[] args) {
+		Atleta atleta = new Atleta(); // Super atleta
+		atleta.setValorPatrocinio(1000);
+	
+		
+		Corredor corredor = new Corredor(); // Filho de Atleta
+		corredor.setValorPatrocinio(1000);
+		
+		atleta.atualizarValor(15);
+		corredor.atualizarValor(15);
+		
+		System.out.println("Salário do atleta é: " + atleta.getValorPatrocinio());
+		System.out.println("Salário do corredor é: " + corredor.getValorPatrocinio());
+
+	}
+
+}

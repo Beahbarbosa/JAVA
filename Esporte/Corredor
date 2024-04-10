@@ -1,0 +1,25 @@
+public class Corredor extends Atleta{
+	// Atributo 
+	private double velocidade;
+	
+	// Criar Gets e Sets
+	public double getVelocidade() {
+		return velocidade;
+	}
+
+	public void setVelocidade(double velocidade) {
+		this.velocidade = velocidade;
+	}
+	
+	@Override
+	public double atualizarValor(double taxa) {
+		// TODO Auto-generated method stub
+		return super.atualizarValor(taxa);
+	}
+
+	public void setValorPatrocinio(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

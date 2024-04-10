@@ -1,0 +1,12 @@
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// Instancia da classe Atleta 
+		Atleta pessoal = new Atleta();
+		pessoal.inserirDados();
+		pessoal.atualizarValor(20);
+		pessoal.mostrar();
+		
+	}
+

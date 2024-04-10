@@ -1,0 +1,40 @@
+/* Agregação: é um tipo especial de associação onde tenta-se demonstrar que as 
+* informações de um objeto (objeto-todo /mãe )precisam ser complementadas
+* pelas informações contidas em um ou mais objetos de outra classe (objeto-parte)
+**/
+
+public class Time{
+	private int codigoTime;
+	private String nomeTime;
+	//Agregação
+	private Atleta atleta;
+	private Treinador treinador;
+	//Get e Set 
+	public int getCodigoTime() {
+		return codigoTime;
+	}
+	public void setCodigoTime(int codigoTime) {
+		this.codigoTime = codigoTime;
+	}
+	public String getNomeTime() {
+		return nomeTime;
+	}
+	public void setNomeTime(String nomeTime) {
+		this.nomeTime = nomeTime;
+	}
+	public Atleta getAtleta() {
+		return atleta;
+	}
+	public void setAtleta(Atleta atleta) {
+		this.atleta = atleta;
+	}
+	public Treinador getTreinador() {
+		return treinador;
+	}
+	public void setTreinador(Treinador treinador) {
+		this.treinador = treinador;
+	}
+
+	
+	//Get e Set
+}

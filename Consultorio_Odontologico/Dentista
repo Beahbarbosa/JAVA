@@ -1,0 +1,19 @@
+public class Dentista extends Pessoa {
+private String cro; // Registro Dentista
+
+//get e Set
+private int especialidade;
+public String getCro() {
+	return cro;
+}
+public void setCro(String cro) {
+	this.cro = cro;
+}
+public int getEspecialidade() {
+	return especialidade;
+}
+public void setEspecialidade(int especialidade) {
+	this.especialidade = especialidade;
+}
+
+}

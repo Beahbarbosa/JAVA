@@ -1,0 +1,19 @@
+public class Avaliacao extends Servico{
+ private String descricao;
+ private String validade;
+ 
+ // Get e Set
+ 
+public String getDescricao() {
+	return descricao;
+}
+public void setDescricao(String descricao) {
+	this.descricao = descricao;
+}
+public String getValidade() {
+	return validade;
+}
+public void setValidade(String validade) {
+	this.validade = validade;
+}
+}

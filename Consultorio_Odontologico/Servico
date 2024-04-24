@@ -1,0 +1,40 @@
+
+public class Servico {
+   private int id;
+   private String codigo;
+   private String categoria;
+   private double valor;
+   
+   //Get e Set 
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
+public String getCodigo() {
+	return codigo;
+}
+public void setCodigo(String codigo) {
+	this.codigo = codigo;
+}
+public String getCategoria() {
+	return categoria;
+}
+public void setCategoria(String categoria) {
+	this.categoria = categoria;
+}
+public double getValor() {
+	return valor;
+}
+public void setValor(double valor) {
+	this.valor = valor;
+}
+
+//  METODO DE CALCULO MATEMATICO 
+
+public double calcularValor(double taxa) {
+	this.valor += this.valor * taxa / 100;
+	return this.valor;
+}
+}

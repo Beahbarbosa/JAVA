@@ -1,0 +1,21 @@
+
+public class Paciente  extends Pessoa{
+ private String cpf;
+ private String whatsapp; // (+55 011)
+ 
+ // Get e Set
+ 
+public String getCpf() {
+	return cpf;
+}
+public void setCpf(String cpf) {
+	this.cpf = cpf;
+}
+public String getWhatsapp() {
+	return whatsapp;
+}
+public void setWhatsapp(String whatsapp) {
+	this.whatsapp = whatsapp;
+}
+
+}

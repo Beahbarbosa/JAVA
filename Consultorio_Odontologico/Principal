@@ -1,0 +1,38 @@
+import javax.swing.JOptionPane;
+
+public class Principal {
+ public static void main (String [] args) {
+	 Dentista joao = new Dentista();
+	 joao.cadastrarPessoa();
+	 joao.setCro("45690");
+	 joao.setEspecialidade(3);
+	 
+	 Consulta cs0164=new Consulta();
+	 cs0164.setCodigo("001");
+	 cs0164.setDescricaoTriagem("Resturação de Dente");
+	 cs0164.setId(1);
+	 cs0164.setCategoria("Clinico Geral");
+	 cs0164.setDentista(joao);
+	 cs0164.setValor(80);
+	 cs0164.calcularValor(15.5);
+	 
+	 /*System.out.println(joao.toString()
+			 + "\nCRO: " + joao.getCro()
+			 + "ESPECIALIDADE" + joao.getEspecialidade());
+	 
+	 System.out.println("ID: " + cs0164.getId() 
+	 + "\nCODIGO: " + cs0164.getCodigo()
+	 + "\nDESCRICAO" + cs0164.getDescricaoTriagem()
+	 + "\nCATEGORIA" + cs0164.getCategoria()
+	 + "\nDENTISTA" + cs0164.getDentista());*/
+	 
+		 
+	 JOptionPane.showMessageDialog(null, "FICHA DE ATENDIMENTO"
+			 + "\n\n ID: " + cs0164.getId() 
+			 + "\nCODIGO: " + cs0164.getCodigo()
+			 + "\nDESCRICAO: " + cs0164.getDescricaoTriagem()
+			 + "\nCATEGORIA: " + cs0164.getCategoria()
+			 + "\nDENTISTA: " + cs0164.getDentista()
+	         + "\nVALOR: " + cs0164.getValor());
+ }
+}

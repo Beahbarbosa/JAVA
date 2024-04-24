@@ -1,0 +1,28 @@
+
+public class Consulta  extends Servico{
+  private String descricaoTriagem;
+  private Dentista dentista;  //Agregação Consulta tem Dentista
+  
+  //Get e Set
+public String getDescricaoTriagem() {
+	return descricaoTriagem;
+}
+public void setDescricaoTriagem(String descricaoTriagem) {
+	this.descricaoTriagem = descricaoTriagem;
+}
+public Dentista getDentista() {
+	return dentista;
+}
+public void setDentista(Dentista dentista) {
+	this.dentista = dentista;
+}
+
+//SOBRESCRITA DE METODOS
+
+@Override
+public double calcularValor(double taxa) {
+	return super.calcularValor(taxa + 2); //Adicionar 2% de encargos de taxa 
+	
+}
+  
+}

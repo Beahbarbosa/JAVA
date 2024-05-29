@@ -1,0 +1,22 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Cachorro cachorro= new Cachorro("Rex",5,"Pastor amão");
+        Gato gato = new Gato("Faiska",3,true);
+        
+        cachorro.emitirSom();
+        gato.emitirSom();
+        
+        cachorro.brincar();
+        gato.brincar();
+        
+        cachorro.setNome("Max");
+        System.out.println("Novo nome do cachorro é " + cachorro.getNome());
+        
+        gato.setIdade(6);
+        System.out.println("Nova idade do gato é "  + gato.getIdade());
+       
+	}
+
+}

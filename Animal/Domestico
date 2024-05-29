@@ -1,0 +1,3 @@
+ public interface Domestico {
+  public void brincar();
+}

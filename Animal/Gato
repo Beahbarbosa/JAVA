@@ -1,0 +1,32 @@
+public class Gato extends Animal implements Domestico{
+	private boolean gostaCacar;
+//Construtor
+	public Gato(String nome, int idade,boolean gostaCacar) {
+		super(nome, idade);
+		this.gostaCacar=gostaCacar;
+	}
+
+@Override
+public void brincar() {
+	System.out.println(getNome()+ "está brincando com uma bolinha.");
+	
+}
+
+@Override
+public void emitirSom() {
+	System.out.println(getNome()+"Está miando");
+	
+}
+
+public boolean isGostaCacar() {
+	return gostaCacar;
+}
+
+public void setGostaCacar(boolean gostaCacar) {
+	this.gostaCacar = gostaCacar;
+}
+
+public void ronronar() {
+	System.out.println(getNome()+ "esta ronronando");
+}
+}
